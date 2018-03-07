@@ -11,3 +11,6 @@
 2. 【3月暑研申请培训课】3 11理工科实验班第二节课
 [YTB](https://youtu.be/7JjiAjlY2EE)
 [PPT](https://github.com/jialanxin/njuphy-/blob/master/02%2003%20CV%E5%86%99%E4%BD%9C%EF%BC%88%E4%B8%8A%20%E4%B8%8B%EF%BC%89.pptx)
+3. 【3月暑研申请培训课】3 11理工科实验班第三节课
+[YTB](https://youtu.be/a6vjR3J56Jw)
+[PPT]()
