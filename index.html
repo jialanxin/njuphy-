@@ -4,12 +4,18 @@
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
 <title>index.md</title><link href='night/mermaid.dark.css' rel='stylesheet' type='text/css' />
 <link href='night/codeblock.dark.css' rel='stylesheet' type='text/css' />
-<link href='night/sourcemode.dark.css' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --code-block-bg-color: inherit; }
+<link href='night/sourcemode.dark.css' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}#write, body { height: auto; }
+#write, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write ol, #write p, #write ul { position: relative; }
+#write, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+.CodeMirror, .md-fences, table { text-align: left; }
+.md-reset, a:active, a:hover { outline: 0px; }
+.md-reset, .md-toc-item a { text-decoration: none; }
+.MathJax_SVG, .md-reset { float: none; direction: ltr; }
+:root { --bg-color:#ffffff; --text-color:#333333; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
-a:active, a:hover { outline: 0px; }
+body { margin: 0px; padding: 0px; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 .in-text-selection, ::selection { background: rgb(181, 214, 252); text-shadow: none; }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; contain: layout paint; }
+#write { margin: 0px auto; word-break: normal; word-wrap: break-word; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; }
 .for-image #write { padding-left: 8px; padding-right: 8px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 @media screen and (max-width: 500px) {
@@ -18,14 +24,12 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
   .CodeMirror-gutters { display: none !important; }
 }
 .typora-export #write { margin: 0px auto; }
-#write > p:first-child, #write > ul:first-child, #write > ol:first-child, #write > pre:first-child, #write > blockquote:first-child, #write > div:first-child, #write > table:first-child { margin-top: 30px; }
+#write > blockquote:first-child, #write > div:first-child, #write > ol:first-child, #write > p:first-child, #write > pre:first-child, #write > table:first-child, #write > ul:first-child { margin-top: 30px; }
 #write li > table:first-child { margin-top: -20px; }
 img { max-width: 100%; vertical-align: middle; }
-input, button, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
-::before, ::after, * { box-sizing: border-box; }
-#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre { width: inherit; }
-#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { position: relative; }
+*, ::after, ::before { box-sizing: border-box; }
 h1 { font-size: 2rem; }
 h2 { font-size: 1.8rem; }
 h3 { font-size: 1.6rem; }
@@ -34,25 +38,26 @@ h5 { font-size: 1.2rem; }
 h6 { font-size: 1rem; }
 p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
 .typora-export p { white-space: normal; }
-.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0rem; -webkit-margin-after: 0rem; }
+.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0px; -webkit-margin-after: 0px; }
 .hidden { display: none; }
-.md-blockmeta { color: rgb(204, 204, 204); font-weight: bold; font-style: italic; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
 a { cursor: pointer; }
 sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; }
-#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; margin: 4px 0px 0px; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+#write > figure:first-child { margin-top: 16px; }
+figure { overflow-x: auto; margin: -8px 0px 0px -8px; max-width: calc(100% + 16px); padding: 8px; }
 tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
-table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; }
+.CodeMirror-line, .md-fences { break-inside: avoid; }
 table.md-table td { min-width: 80px; }
-.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
-.CodeMirror { text-align: left; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; margin-right: 4px; }
 .CodeMirror-placeholder { opacity: 0.3; }
 .CodeMirror pre { padding: 0px 4px; }
 .CodeMirror-lines { padding: 0px; }
 div.hr:focus { cursor: none; }
 pre { white-space: pre-wrap; }
-.CodeMirror-gutters { margin-right: 4px; }
-.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: var(--code-block-bg-color); position: relative !important; }
+.md-fences { font-size: 0.9rem; display: block; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
 .md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
 .md-fences .CodeMirror.CodeMirror-wrap { top: -1.6em; margin-bottom: -1.6em; }
 .md-fences.mock-cm { white-space: pre-wrap; }
@@ -60,45 +65,45 @@ pre { white-space: pre-wrap; }
 .show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; padding-top: 1em; padding-bottom: 1em; }
 .footnotes + .footnotes { margin-top: -1em; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: transparent; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: normal; text-align: left; box-sizing: content-box; direction: ltr; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; vertical-align: top; background: 0px 0px; text-shadow: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; }
+.md-toc-inner, a img, img a { cursor: pointer; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
-li p, li .mathjax-block { margin: 0.5rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
 li { margin: 0px; position: relative; }
 blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child { margin-top: 0px; }
-.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: nowrap; }
 @media print {
-  html, body { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   h1, h2, h3, h4, h5, h6 { break-after: avoid-page; orphans: 2; }
   p { orphans: 4; }
   html.blink-to-pdf { font-size: 13px; }
   .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid; }
   .typora-export #write::after { height: 0px; }
-  @page { margin: 20mm 0mm; }
+  @page { margin: 20mm 0px; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
-a img, img a { cursor: pointer; }
-pre.md-meta-block { font-size: 0.8rem; min-height: 2.86rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
-p .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > img:only-child { display: block; margin: auto; }
+.md-line > .md-image:only-child, p > .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+.mathjax-block:not(:empty)::after, .md-toc-content::after, .md-toc::after { display: none; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
 .mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
 p + .mathjax-block { margin-top: -1.143rem; }
-.mathjax-block:not(:empty)::after { display: none; }
-[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: none; box-shadow: none; }
-.task-list { list-style-type: none; }
-.task-list-item { position: relative; padding-left: 1em; }
-.task-list-item input { position: absolute; top: 0px; left: 0px; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
 .math { font-size: 1rem; }
 .md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.MathJax_SVG, .mathjax-block .MathJax_SVG_Display { text-indent: 0px; max-width: none; max-height: none; min-height: 0px; }
 .md-toc-content { position: relative; margin-left: 0px; }
-.md-toc::after, .md-toc-content::after { display: none; }
 .md-toc-item { display: block; color: rgb(65, 131, 196); }
-.md-toc-item a { text-decoration: none; }
 .md-toc-inner:hover { }
-.md-toc-inner { display: inline-block; cursor: pointer; }
-.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: bold; }
+.md-toc-inner { display: inline-block; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
 .md-toc-h2 .md-toc-inner { margin-left: 2em; }
 .md-toc-h3 .md-toc-inner { margin-left: 4em; }
 .md-toc-h4 .md-toc-inner { margin-left: 6em; }
@@ -115,19 +120,21 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 .md-tag { opacity: 0.5; }
-.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: monospace; }
+code, pre, tt { font-family: var(--monospace); }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
 code { text-align: left; }
 h1 .md-tag, h2 .md-tag, h3 .md-tag, h4 .md-tag, h5 .md-tag, h6 .md-tag { font-weight: initial; opacity: 0.35; }
-a.md-print-anchor { border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: none !important; background: transparent !important; text-decoration: initial !important; text-shadow: initial !important; }
+a.md-print-anchor { border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
 .md-inline-math .MathJax_SVG .noError { display: none !important; }
-.mathjax-block .MathJax_SVG_Display { text-align: center; margin: 1em 0em; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; display: block !important; }
+.mathjax-block .MathJax_SVG_Display { text-align: center; margin: 1em 0px; position: relative; min-width: 100%; width: auto; display: block !important; }
 .MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
 .MathJax_SVG .MJX-monospace { font-family: monospace; }
 .MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: normal; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; min-width: 0px; border: 0px; padding: 0px; margin: 0px; }
 .MathJax_SVG * { transition: none; }
-.md-diagram-panel > svg { max-width: 100%; }
-[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
+.md-diagram-panel > svg, [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
 
 
 .cm-s-inner .cm-variable, .cm-s-inner .cm-operator, .cm-s-inner .cm-property { color: rgb(184, 191, 198); }
@@ -152,10 +159,10 @@ a.md-print-anchor { border-width: initial !important; border-style: none !import
 .cm-s-inner .cm-variable { color: rgb(184, 191, 198); }
 .cm-s-inner .cm-variable-2 { color: rgb(159, 186, 213); }
 .cm-s-inner .cm-variable-3 { color: rgb(28, 198, 133); }
-.CodeMirror-selectedtext { background: rgb(74, 137, 220); text-shadow: none; color: rgb(255, 255, 255) !important; }
+.CodeMirror-selectedtext, .CodeMirror-selected { background: rgb(74, 137, 220); text-shadow: none; color: rgb(255, 255, 255) !important; }
 
 
-:root { --bg-color: #363B40; --side-bar-bg-color: #2E3033; --text-color: #b8bfc6; --code-block-bg-color: inherit; --control-text-color: #b7b7b7; --control-text-hover-color: #eee; --window-border: 1px dashed #9b9b9b; --active-file-bg-color: rgb(34, 34, 34); --active-file-border-color: #8d8df0; --active-file-text-color: white; --item-hover-bg-color: #70717d; --item-hover-text-color: white; --primary-color: #6dc1e7; }
+:root { --bg-color: #363B40; --side-bar-bg-color: #2E3033; --text-color: #b8bfc6; --control-text-color: #b7b7b7; --control-text-hover-color: #eee; --window-border: 1px dashed #9b9b9b; --active-file-bg-color: rgb(34, 34, 34); --active-file-border-color: #8d8df0; --active-file-text-color: white; --item-hover-bg-color: #70717d; --item-hover-text-color: white; --primary-color: #6dc1e7; }
 html { font-size: 16px; }
 html, body { text-size-adjust: 100%; background: var(--bg-color); fill: currentcolor; }
 #write { max-width: 914px; padding-top: 20px; }
@@ -164,7 +171,7 @@ div.code-tooltip, .md-hover-tip .md-arrow::after { background: rgb(75, 83, 90); 
 .popover.bottom > .arrow::after { border-bottom-color: rgb(75, 83, 90); }
 html, body, button, input, select, textarea { font-style: normal; line-height: 1.625rem; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 hr { height: 2px; border: 0px; margin: 50px 0px !important; }
-h1, h2, h3, h4, h5, h6 { font-family: "Lucida Grande", Corbal, sans-serif; font-weight: normal; clear: both; word-wrap: break-word; margin: 0px; padding: 0px; color: rgb(222, 222, 222); }
+h1, h2, h3, h4, h5, h6 { font-family: "Lucida Grande", Corbel, sans-serif; font-weight: normal; clear: both; word-wrap: break-word; margin: 0px; padding: 0px; color: rgb(222, 222, 222); }
 h1 { font-size: 2.5rem; line-height: 2.75rem; margin-bottom: 1.5rem; letter-spacing: -1.5px; }
 h2 { font-size: 1.63rem; line-height: 1.875rem; margin-bottom: 1.5rem; letter-spacing: -1px; font-weight: bold; }
 h3 { font-size: 1.17rem; line-height: 1.5rem; margin-bottom: 1.5rem; letter-spacing: -1px; font-weight: bold; }
@@ -213,10 +220,10 @@ blockquote { color: rgb(157, 162, 166); }
 table a { color: rgb(222, 222, 222); }
 th, td { border: 1px solid rgb(71, 77, 84); }
 .task-list { padding-left: 0px; }
-.task-list-item { padding-left: 1.25rem; }
-.task-list-item input { top: 0.1875rem; }
-.task-list-item input::before { content: ""; display: inline-block; width: 0.875rem; height: 0.875rem; vertical-align: middle; text-align: center; border: 1px solid rgb(184, 191, 198); background-color: rgb(54, 59, 64); margin-top: -0.4375rem; }
-.task-list-item input:checked::before, .task-list-item input[checked]::before { content: "√"; font-size: 0.625rem; line-height: 0.625rem; color: rgb(222, 222, 222); }
+.md-task-list-item { padding-left: 1.25rem; }
+.md-task-list-item > input { top: auto; }
+.md-task-list-item > input::before { content: ""; display: inline-block; width: 0.875rem; height: 0.875rem; vertical-align: middle; text-align: center; border: 1px solid rgb(184, 191, 198); background-color: rgb(54, 59, 64); margin-top: -0.4rem; }
+.md-task-list-item > input:checked::before, .md-task-list-item > input[checked]::before { content: "√"; font-size: 0.625rem; line-height: 0.625rem; color: rgb(222, 222, 222); }
 .CodeMirror-gutters { background: transparent; border-right: 1px solid transparent; }
 .auto-suggest-container { border: 0px; background-color: rgb(82, 92, 101); }
 #typora-quick-open { background-color: rgb(82, 92, 101); }
@@ -290,12 +297,13 @@ footer { color: inherit; }
 .typora-sourceview-on #toggle-sourceview-btn, #footer-word-count:hover, .show-word-count #footer-word-count { background: rgb(51, 51, 51); }
 #toggle-sourceview-btn:hover { color: rgb(238, 238, 238); background: rgb(51, 51, 51); }
 .on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * { color: rgb(104, 104, 104) !important; }
-.on-focus-mode .md-end-block:not(.md-focus) img, .on-focus-mode .task-list-item:not(.md-focus-container) > input { }
+.on-focus-mode .md-end-block:not(.md-focus) img, .on-focus-mode .md-task-list-item:not(.md-focus-container) > input { }
 .on-focus-mode li[cid]:not(.md-focus-container) { color: rgb(104, 104, 104); }
 .on-focus-mode .md-fences.md-focus .CodeMirror-code > :not(.CodeMirror-activeline) *, .on-focus-mode .CodeMirror.cm-s-inner:not(.CodeMirror-focused) * { color: rgb(104, 104, 104) !important; }
 .on-focus-mode .md-focus, .on-focus-mode .md-focus-container { color: rgb(255, 255, 255); }
 .on-focus-mode #typora-source .CodeMirror-code > :not(.CodeMirror-activeline) * { color: rgb(104, 104, 104) !important; }
 #write .md-focus .md-diagram-panel { border: 1px solid rgb(221, 221, 221); margin-left: -30px; }
+#write.show-fences-line-number .md-focus .md-diagram-panel { margin-left: auto; }
 .md-diagram-panel-error { color: rgb(241, 144, 142); }
 .active-tab-files #info-panel-tab-file, .active-tab-files #info-panel-tab-file:hover, .active-tab-outline #info-panel-tab-outline, .active-tab-outline #info-panel-tab-outline:hover { color: rgb(238, 238, 238); }
 .sidebar-footer-item:hover, .footer-item:hover { background: inherit; color: white; }
@@ -311,6 +319,7 @@ footer { color: inherit; }
 .file-list-item.active { background-color: var(--active-file-bg-color); }
 #ty-tooltip { background-color: black; color: rgb(238, 238, 238); }
 #write { cursor: -webkit-image-set(url("night/cursor.png") 1x, url("night/cursor@2x.png") 2x) 8 8, auto; }
+.md-task-list-item > input { margin-left: -1.3em; margin-top: calc(1rem - 10px); -webkit-appearance: none; }
 
 
 
@@ -320,6 +329,6 @@ footer { color: inherit; }
 </style>
 </head>
 <body class='typora-export' >
-<div  id='write'  class = 'is-node'><h1><a name='header-n0' class='md-header-anchor '></a>njuphy出国资料分享</h1><p>更新日期：2018.3.19 整理：贾澜辛</p><p><em>注意，youtube以及Google Drive资源须fq使用</em>(请咨询群内的梯子担当张泽恒)</p><h2><a name='header-n6' class='md-header-anchor '></a>入群必读<a href='https://github.com/jialanxin/njuphy-/blob/master/%E5%85%A5%E7%BE%A4%E5%BF%85%E8%AF%BB.pdf'>PDF</a></h2><h2><a name='header-n7' class='md-header-anchor '></a><a href='https://github.com/jialanxin/njuphy-/blob/master/NJUPHY%E5%87%BA%E5%9B%BD%E7%94%B3%E8%AF%B7%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E9%87%87%E9%9B%86%E8%A1%A8.doc'>NJUPHY出国申请个人信息采集表.doc</a></h2><h2><a name='header-n8' class='md-header-anchor '></a><a href='https://github.com/jialanxin/njuphy-/blob/master/%E7%BE%A4%E6%B6%88%E6%81%AF%E8%AE%B0%E5%BD%95.docx'>群消息记录(3.15)</a></h2><h2><a name='header-n9' class='md-header-anchor '></a><a href='https://github.com/jialanxin/njuphy-/blob/master/NJU%E7%89%A9%E9%99%A2%E7%95%99%E5%AD%A6%E5%BE%AE%E8%AE%B2%E5%BA%A7%E7%AC%AC%E4%BA%8C%E6%9C%9F.docx'>NJU物院留学微讲座第二期.docx</a></h2><h2><a name='header-n10' class='md-header-anchor '></a><a href='https://github.com/jialanxin/njuphy-/tree/master/%E7%AC%AC%E4%B8%80%E6%9C%9F%E5%BE%AE%E8%AE%B2%E5%BA%A7%E5%A4%A7%E7%A4%BC%E5%8C%85%EF%BC%88CV_cover%20letter_%E6%8B%94%E5%B0%96%E8%AF%81%E6%98%8E_%E6%8E%92%E5%90%8D%E8%AF%81%E6%98%8E%E6%A8%A1%E6%9D%BF%EF%BC%89'>第一期微讲座大礼包（第一期微讲座记录/CV/cover letter/拔尖证明/排名证明模板）</a></h2><h2><a name='header-n11' class='md-header-anchor '></a><a href='https://github.com/jialanxin/njuphy-/tree/master/%E9%9D%A2%E8%AF%95%E5%A4%A7%E7%A4%BC%E5%8C%85'>面试大礼包</a></h2><h2><a name='header-n12' class='md-header-anchor '></a>致所有希望转商科的学弟学妹-钱羽苏同学的经验总结<a href='https://github.com/jialanxin/njuphy-/blob/master/%E8%87%B4%E6%89%80%E6%9C%89%E5%B8%8C%E6%9C%9B%E8%BD%AC%E5%95%86%E7%A7%91%E7%9A%84%E5%AD%A6%E5%BC%9F%E5%AD%A6%E5%A6%B9-%E9%92%B1%E7%BE%BD%E8%8B%8F%E5%90%8C%E5%AD%A6%E7%9A%84%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93.pdf'>PDF</a></h2><h2><a name='header-n13' class='md-header-anchor '></a>3月暑研申请培训课</h2><ol start='' ><li>【3月暑研申请培训课】3 11理工科实验班第一节课<a href='https://youtu.be/9-1wjp8IbXE'>YTB</a>|<a href='https://github.com/jialanxin/-/blob/master/01%20%E6%95%B4%E4%BD%93%E7%AD%96%E7%95%A5%E5%92%8C%E6%97%B6%E9%97%B4%E8%A7%84%E5%88%92.pptx'>PPT</a></li><li>【3月暑研申请培训课】3 11理工科实验班第二节课<a href='https://youtu.be/7JjiAjlY2EE'>YTB</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/02%2003%20CV%E5%86%99%E4%BD%9C%EF%BC%88%E4%B8%8A%20%E4%B8%8B%EF%BC%89.pptx'>PPT</a></li><li>【3月暑研申请培训课】3 11理工科实验班第三节课<a href='https://youtu.be/a6vjR3J56Jw'>YTB</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/04%20%E6%9A%91%E7%A0%94%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9.pptx'>PPT</a></li><li>【3月暑研申请培训班】3 11理工科实验班第四节课<a href='https://youtu.be/TnYHXK3KWj0'>YTB</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/05%20%E5%A5%97%E7%A3%81.pptx'>PPT</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/06%20%E9%9D%A2%E8%AF%95.pptx'>PPT</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/07%20%E9%80%89%E6%A0%A1%E9%80%89%E4%B8%93%E4%B8%9A.pptx'>PPT</a></li><li>【3月暑研申请培训班】3 12理工科实验班第一节课<a href='https://youtu.be/AXdIvUqAXtk'>YTB</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/07%20%E9%80%89%E6%A0%A1%E9%80%89%E4%B8%93%E4%B8%9A.pptx'>PPT</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/08%252B09%20%E5%90%84%E7%A7%8D%E6%96%87%E4%B9%A6%E5%BA%94%E5%AF%B9%E7%AD%96%E7%95%A5%E5%90%88%E9%9B%86%EF%BC%88%E4%B8%8A%252B%E4%B8%8B%EF%BC%89.pptx'>PPT</a></li><li>【3月暑研申请培训班】3 12理工科实验班第二节课<a href='https://youtu.be/mpPbh8_8uYI'>YTB</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/10%20%E6%8E%A8%E8%8D%90%E4%BF%A1.pptx'>PPT</a></li><li>【3月暑研申请培训班】3 12理工科实验班第三节课<a href='https://youtu.be/kWwxAgC-OA4'>YTB</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/11%20%E7%94%B3%E8%AF%B7%E7%A8%8B%E5%BA%8F%EF%BC%88%E4%B8%8A%EF%BC%89s.pptx'>PPT</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/12%20%E7%94%B3%E8%AF%B7%E7%A8%8B%E5%BA%8F%EF%BC%88%E4%B8%8B%EF%BC%89s.pptx'>PPT</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/13%20%E8%A1%A5%E5%85%85%20%E6%88%90%E5%8A%9F%E5%85%B8%E8%8C%83%E6%96%87%E4%B9%A6%E7%82%B9%E8%AF%84.pptx'>PPT</a></li></ol><h2><a name='header-n36' class='md-header-anchor '></a>5月暑研培训课</h2><ol start='' ><li>【5月暑研培训课】5月13日第一节课NJUPHY课程介绍+申请总体策略<a href='https://youtu.be/w_Wd9xLUWeo'>YTB</a></li><li>【5月暑研培训课】5月13日第二节课CV写作 <a href='https://youtu.be/LeqxNkijm1U'>YTB</a></li><li>【5月暑研培训课】5月13日第三节课暑期注意事项+套磁<a href='https://youtu.be/UPOI6U3SEL8'>YTB</a></li><li>【5月暑研培训课】5月13日第四节课面试<a href='https://youtu.be/blnZMvM0tqA'>YTB</a></li><li>【5月暑研培训课】5月14日第一节课选校选专业<a href='https://youtu.be/iXgs7Vdwet4'>YTB</a></li><li>【5月暑研培训课】5月14日第二节课各文书类型 <a href='https://youtu.be/qp60BRSP2J0'>YTB</a></li><li>【5月暑研培训课】5月14日第三节课推荐信<a href='https://youtu.be/M5LxcnZHbT0'>YTB</a></li><li>【5月暑研培训课】5月14日第四节课申请程序<a href='https://youtu.be/dqOiSc3CdJE'>YTB</a></li></ol><h2><a name='header-n62' class='md-header-anchor '></a>9月申请培训课</h2><ol start='' ><li>【9月申请培训课】9月23日A项目课程重要性+申请总体策略和规划<a href='https://youtu.be/jIJ9kseoIIU'>YTB</a></li><li>【9月申请培训课】9月23日CV<a href='https://youtu.be/uGH1Go1ikI8'>YTB</a></li><li>【9月申请培训课】9月23日暑研注意事项+套磁<a href='https://youtu.be/VS-Vncoa4wg'>YTB</a></li><li>【9月申请培训课】9月23套磁+面试+选校选专业<a href='https://youtu.be/PFiFU6iCuXQ'>YTB</a></li><li>【9月申请培训课】9月24日申请程序+典范文书点评<a href='https://youtu.be/hsadkEAchyc'>YTB</a></li><li>【9月申请培训课】9月24日选校选专业+各种文书应对策略+推荐信<a href='https://youtu.be/kRb_ioxEemU'>YTB</a></li></ol><h2><a name='header-n82' class='md-header-anchor '></a>GRE sub from 宋谦</h2><p><a href='https://github.com/jialanxin/njuphy-/tree/master/GRE%20SUB%20from%20songqian'>GIT</a></p><h2><a name='header-n85' class='md-header-anchor '></a>王子睿托福口语/写作提分班</h2><p><a href='https://drive.google.com/open?id=1vDOKZZWQjUK_BttKhAjp_P8H5C1iMUI6'>GDrive</a></p><h2><a name='header-n88' class='md-header-anchor '></a>2017GRE全程</h2><p><a href='https://mega.nz/#F!uHYxgIQb!EeHJzJWiTBF6W-mBcXe2hg'>Mega</a></p><h2><a name='header-n91' class='md-header-anchor '></a>飞跃手册</h2><p><a href='https://github.com/jialanxin/njuphy-/blob/master/%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E9%A3%9E%E8%B7%83%E6%89%8B%E5%86%8C.pdf'>北大</a></p><p><a href='https://pan.baidu.com/s/1na1PwmkYKDKe2leneszz6A'>科大</a> 密码: tt4f</p><p><a href='https://github.com/jialanxin/njuphy-/tree/master/%E5%8E%86%E5%B9%B4%E7%94%B3%E8%AF%B7%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93'>南大物院</a></p><p><a href='https://github.com/jialanxin/njuphy-/tree/master/%E5%8E%86%E5%B9%B4%E7%94%B3%E8%AF%B7%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/%E5%8D%97%E5%A4%A7%E5%8C%96%E5%AD%A6%E7%94%B3%E8%AF%B7'>南大化院</a></p><h2><a name='header-n100' class='md-header-anchor '></a>近代物理实验二报告</h2><p><a href='https://mega.nz/#!baBHkDgT!9YBArcAWYL8LqWVwMB1rhCmzNAhhT_HmBkvIGxK5o-c'>Mega</a></p><h2><a name='header-n103' class='md-header-anchor '></a>暑研J1签证</h2><p>签证飞跃课<a href='https://youtu.be/COferIbjGbg'>YTB</a></p><p>J1签证<a href='https://github.com/jialanxin/njuphy-/blob/master/J1%E7%AD%BE%E8%AF%81.docx'>DOC</a></p><p>J1面签<a href='https://github.com/jialanxin/njuphy-/blob/master/J-1%E9%9D%A2%E7%AD%BE.docx'>DOC</a></p><h2><a name='header-n110' class='md-header-anchor '></a><a href='https://github.com/jialanxin/njuphy-/tree/master/B1%E7%AD%BE%E8%AF%81%E6%8C%87%E5%AF%BC'>暑研B1签证指导</a></h2><h2><a name='header-n111' class='md-header-anchor '></a><a href='https://github.com/jialanxin/njuphy-/blob/master/WES%E8%AE%A4%E8%AF%81%E5%BE%AE%E8%AE%B2%E5%BA%A7-2017%EF%BC%88%E6%96%B0%EF%BC%89.pdf'>关于WES认证</a></h2><p></p></div>
+<div  id='write'  class = 'is-node'><h1><a name='header-n0' class='md-header-anchor '></a>njuphy出国资料分享</h1><p>更新日期：2018.3.19 整理：贾澜辛</p><p><em>注意，youtube以及Google Drive资源须fq使用</em>(请咨询群内的梯子担当张泽恒)</p><h2><a name='header-n6' class='md-header-anchor '></a>入群必读<a href='https://github.com/jialanxin/njuphy-/blob/master/%E5%85%A5%E7%BE%A4%E5%BF%85%E8%AF%BB.pdf'>PDF</a></h2><h2><a name='header-n7' class='md-header-anchor '></a><a href='https://github.com/jialanxin/njuphy-/blob/master/NJUPHY%E5%87%BA%E5%9B%BD%E7%94%B3%E8%AF%B7%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E9%87%87%E9%9B%86%E8%A1%A8.doc'>NJUPHY出国申请个人信息采集表.doc</a></h2><h2><a name='header-n8' class='md-header-anchor '></a><a href='https://github.com/jialanxin/njuphy-/blob/master/%E7%BE%A4%E6%B6%88%E6%81%AF%E8%AE%B0%E5%BD%95.docx'>群消息记录(3.15)</a></h2><h2><a name='header-n9' class='md-header-anchor '></a><a href='https://github.com/jialanxin/njuphy-/blob/master/NJU%E7%89%A9%E9%99%A2%E7%95%99%E5%AD%A6%E5%BE%AE%E8%AE%B2%E5%BA%A7%E7%AC%AC%E4%BA%8C%E6%9C%9F.docx'>NJU物院留学微讲座第二期.docx</a></h2><h2><a name='header-n10' class='md-header-anchor '></a><a href='https://github.com/jialanxin/njuphy-/tree/master/%E7%AC%AC%E4%B8%80%E6%9C%9F%E5%BE%AE%E8%AE%B2%E5%BA%A7%E5%A4%A7%E7%A4%BC%E5%8C%85%EF%BC%88CV_cover%20letter_%E6%8B%94%E5%B0%96%E8%AF%81%E6%98%8E_%E6%8E%92%E5%90%8D%E8%AF%81%E6%98%8E%E6%A8%A1%E6%9D%BF%EF%BC%89'>第一期微讲座大礼包（第一期微讲座记录/CV/cover letter/拔尖证明/排名证明模板）</a></h2><h2><a name='header-n11' class='md-header-anchor '></a><a href='https://github.com/jialanxin/njuphy-/tree/master/%E9%9D%A2%E8%AF%95%E5%A4%A7%E7%A4%BC%E5%8C%85'>面试大礼包</a></h2><h2><a name='header-n12' class='md-header-anchor '></a>致所有希望转商科的学弟学妹-钱羽苏同学的经验总结<a href='https://github.com/jialanxin/njuphy-/blob/master/%E8%87%B4%E6%89%80%E6%9C%89%E5%B8%8C%E6%9C%9B%E8%BD%AC%E5%95%86%E7%A7%91%E7%9A%84%E5%AD%A6%E5%BC%9F%E5%AD%A6%E5%A6%B9-%E9%92%B1%E7%BE%BD%E8%8B%8F%E5%90%8C%E5%AD%A6%E7%9A%84%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93.pdf'>PDF</a></h2><h2><a name='header-n13' class='md-header-anchor '></a>3月暑研申请培训课</h2><ol start='' ><li>【3月暑研申请培训课】3 11理工科实验班第一节课<a href='https://youtu.be/9-1wjp8IbXE'>YTB</a>|<a href='https://github.com/jialanxin/-/blob/master/01%20%E6%95%B4%E4%BD%93%E7%AD%96%E7%95%A5%E5%92%8C%E6%97%B6%E9%97%B4%E8%A7%84%E5%88%92.pptx'>PPT</a></li><li>【3月暑研申请培训课】3 11理工科实验班第二节课<a href='https://youtu.be/7JjiAjlY2EE'>YTB</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/02%2003%20CV%E5%86%99%E4%BD%9C%EF%BC%88%E4%B8%8A%20%E4%B8%8B%EF%BC%89.pptx'>PPT</a></li><li>【3月暑研申请培训课】3 11理工科实验班第三节课<a href='https://youtu.be/a6vjR3J56Jw'>YTB</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/04%20%E6%9A%91%E7%A0%94%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9.pptx'>PPT</a></li><li>【3月暑研申请培训班】3 11理工科实验班第四节课<a href='https://youtu.be/TnYHXK3KWj0'>YTB</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/05%20%E5%A5%97%E7%A3%81.pptx'>PPT</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/06%20%E9%9D%A2%E8%AF%95.pptx'>PPT</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/07%20%E9%80%89%E6%A0%A1%E9%80%89%E4%B8%93%E4%B8%9A.pptx'>PPT</a></li><li>【3月暑研申请培训班】3 12理工科实验班第一节课<a href='https://youtu.be/AXdIvUqAXtk'>YTB</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/07%20%E9%80%89%E6%A0%A1%E9%80%89%E4%B8%93%E4%B8%9A.pptx'>PPT</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/08%2B09%20%E5%90%84%E7%A7%8D%E6%96%87%E4%B9%A6%E5%BA%94%E5%AF%B9%E7%AD%96%E7%95%A5%E5%90%88%E9%9B%86%EF%BC%88%E4%B8%8A%2B%E4%B8%8B%EF%BC%89.pptx'>PPT</a></li><li>【3月暑研申请培训班】3 12理工科实验班第二节课<a href='https://youtu.be/mpPbh8_8uYI'>YTB</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/10%20%E6%8E%A8%E8%8D%90%E4%BF%A1.pptx'>PPT</a></li><li>【3月暑研申请培训班】3 12理工科实验班第三节课<a href='https://youtu.be/kWwxAgC-OA4'>YTB</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/11%20%E7%94%B3%E8%AF%B7%E7%A8%8B%E5%BA%8F%EF%BC%88%E4%B8%8A%EF%BC%89s.pptx'>PPT</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/12%20%E7%94%B3%E8%AF%B7%E7%A8%8B%E5%BA%8F%EF%BC%88%E4%B8%8B%EF%BC%89s.pptx'>PPT</a>|<a href='https://github.com/jialanxin/njuphy-/blob/master/13%20%E8%A1%A5%E5%85%85%20%E6%88%90%E5%8A%9F%E5%85%B8%E8%8C%83%E6%96%87%E4%B9%A6%E7%82%B9%E8%AF%84.pptx'>PPT</a></li></ol><h2><a name='header-n36' class='md-header-anchor '></a>5月暑研培训课</h2><ol start='' ><li>【5月暑研培训课】5月13日第一节课NJUPHY课程介绍+申请总体策略<a href='https://youtu.be/w_Wd9xLUWeo'>YTB</a></li><li>【5月暑研培训课】5月13日第二节课CV写作 <a href='https://youtu.be/LeqxNkijm1U'>YTB</a></li><li>【5月暑研培训课】5月13日第三节课暑期注意事项+套磁<a href='https://youtu.be/UPOI6U3SEL8'>YTB</a></li><li>【5月暑研培训课】5月13日第四节课面试<a href='https://youtu.be/blnZMvM0tqA'>YTB</a></li><li>【5月暑研培训课】5月14日第一节课选校选专业<a href='https://youtu.be/iXgs7Vdwet4'>YTB</a></li><li>【5月暑研培训课】5月14日第二节课各文书类型 <a href='https://youtu.be/qp60BRSP2J0'>YTB</a></li><li>【5月暑研培训课】5月14日第三节课推荐信<a href='https://youtu.be/M5LxcnZHbT0'>YTB</a></li><li>【5月暑研培训课】5月14日第四节课申请程序<a href='https://youtu.be/dqOiSc3CdJE'>YTB</a></li></ol><h2><a name='header-n62' class='md-header-anchor '></a>9月申请培训课</h2><ol start='' ><li>【9月申请培训课】9月23日A项目课程重要性+申请总体策略和规划<a href='https://youtu.be/jIJ9kseoIIU'>YTB</a></li><li>【9月申请培训课】9月23日CV<a href='https://youtu.be/uGH1Go1ikI8'>YTB</a></li><li>【9月申请培训课】9月23日暑研注意事项+套磁<a href='https://youtu.be/VS-Vncoa4wg'>YTB</a></li><li>【9月申请培训课】9月23套磁+面试+选校选专业<a href='https://youtu.be/PFiFU6iCuXQ'>YTB</a></li><li>【9月申请培训课】9月24日申请程序+典范文书点评<a href='https://youtu.be/hsadkEAchyc'>YTB</a></li><li>【9月申请培训课】9月24日选校选专业+各种文书应对策略+推荐信<a href='https://youtu.be/kRb_ioxEemU'>YTB</a></li></ol><h2><a name='header-n82' class='md-header-anchor '></a>GRE sub from 宋谦</h2><p><a href='https://github.com/jialanxin/njuphy-/tree/master/GRE%20SUB%20from%20songqian'>GIT</a></p><h2><a name='header-n85' class='md-header-anchor '></a>王子睿托福口语/写作提分班</h2><p><a href='https://drive.google.com/open?id=1vDOKZZWQjUK_BttKhAjp_P8H5C1iMUI6'>GDrive</a></p><h2><a name='header-n88' class='md-header-anchor '></a>2017GRE全程</h2><p><a href='https://mega.nz/#F!uHYxgIQb!EeHJzJWiTBF6W-mBcXe2hg'>Mega</a></p><h2><a name='header-n91' class='md-header-anchor '></a>飞跃手册</h2><p><a href='https://github.com/jialanxin/njuphy-/blob/master/%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E9%A3%9E%E8%B7%83%E6%89%8B%E5%86%8C.pdf'>北大</a></p><p><a href='https://pan.baidu.com/s/1na1PwmkYKDKe2leneszz6A'>科大</a> 密码: tt4f</p><p><a href='https://github.com/jialanxin/njuphy-/tree/master/%E5%8E%86%E5%B9%B4%E7%94%B3%E8%AF%B7%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93'>南大物院</a></p><p><a href='https://github.com/jialanxin/njuphy-/tree/master/%E5%8E%86%E5%B9%B4%E7%94%B3%E8%AF%B7%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/%E5%8D%97%E5%A4%A7%E5%8C%96%E5%AD%A6%E7%94%B3%E8%AF%B7'>南大化院</a></p><h2><a name='header-n100' class='md-header-anchor '></a>近代物理实验二报告</h2><p><a href='https://mega.nz/#!baBHkDgT!9YBArcAWYL8LqWVwMB1rhCmzNAhhT_HmBkvIGxK5o-c'>Mega</a></p><h2><a name='header-n103' class='md-header-anchor '></a>暑研J1签证</h2><p>签证飞跃课<a href='https://youtu.be/COferIbjGbg'>YTB</a></p><p>J1签证<a href='https://github.com/jialanxin/njuphy-/blob/master/J1%E7%AD%BE%E8%AF%81.docx'>DOC</a></p><p>J1面签<a href='https://github.com/jialanxin/njuphy-/blob/master/J-1%E9%9D%A2%E7%AD%BE.docx'>DOC</a></p><h2><a name='header-n110' class='md-header-anchor '></a><a href='https://github.com/jialanxin/njuphy-/tree/master/B1%E7%AD%BE%E8%AF%81%E6%8C%87%E5%AF%BC'>暑研B1签证指导</a></h2><h2><a name='header-n111' class='md-header-anchor '></a><a href='https://github.com/jialanxin/njuphy-/blob/master/WES%E8%AE%A4%E8%AF%81%E5%BE%AE%E8%AE%B2%E5%BA%A7-2017%EF%BC%88%E6%96%B0%EF%BC%89.pdf'>关于WES认证</a></h2><p>&nbsp;</p></div>
 </body>
 </html>
