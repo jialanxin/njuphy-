@@ -23,6 +23,11 @@
   </url>
   
   <url>
+    <loc>https://jialanxin.github.io/njuphy-/post/%E5%85%B3%E4%BA%8Ewes%E8%AE%A4%E8%AF%81/</loc>
+    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jialanxin.github.io/njuphy-/post/%E6%89%98%E7%A6%8Fgre%E8%A7%86%E9%A2%91%E8%AF%BE%E7%A8%8B/</loc>
     <lastmod>2019-02-13T00:00:00+00:00</lastmod>
   </url>
@@ -38,13 +43,12 @@
   </url>
   
   <url>
-    <loc>https://jialanxin.github.io/njuphy-/categories/</loc>
-    <priority>0</priority>
+    <loc>https://jialanxin.github.io/njuphy-/post/%E8%BF%91%E4%BB%A3%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C%E4%BA%8C/</loc>
+    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jialanxin.github.io/njuphy-/categories/gre/</loc>
-    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
+    <loc>https://jialanxin.github.io/njuphy-/categories/</loc>
     <priority>0</priority>
   </url>
   
@@ -55,13 +59,19 @@
   </url>
   
   <url>
-    <loc>https://jialanxin.github.io/njuphy-/categories/gresub/</loc>
+    <loc>https://jialanxin.github.io/njuphy-/categories/gre/</loc>
     <lastmod>2019-02-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jialanxin.github.io/njuphy-/tags/gresub/</loc>
+    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jialanxin.github.io/njuphy-/categories/gresub/</loc>
     <lastmod>2019-02-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -85,13 +95,19 @@
   </url>
   
   <url>
-    <loc>https://jialanxin.github.io/njuphy-/archives/</loc>
+    <loc>https://jialanxin.github.io/njuphy-/tags/wse%E8%AE%A4%E8%AF%81/</loc>
+    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jialanxin.github.io/njuphy-/categories/%E6%89%98%E7%A6%8F/</loc>
+    <loc>https://jialanxin.github.io/njuphy-/categories/wse%E8%AE%A4%E8%AF%81/</loc>
     <lastmod>2019-02-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jialanxin.github.io/njuphy-/archives/</loc>
   </url>
   
   <url>
@@ -101,7 +117,7 @@
   </url>
   
   <url>
-    <loc>https://jialanxin.github.io/njuphy-/categories/%E6%9A%91%E7%A0%94/</loc>
+    <loc>https://jialanxin.github.io/njuphy-/categories/%E6%89%98%E7%A6%8F/</loc>
     <lastmod>2019-02-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -113,7 +129,7 @@
   </url>
   
   <url>
-    <loc>https://jialanxin.github.io/njuphy-/categories/%E7%94%B3%E8%AF%B7/</loc>
+    <loc>https://jialanxin.github.io/njuphy-/categories/%E6%9A%91%E7%A0%94/</loc>
     <lastmod>2019-02-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -125,7 +141,7 @@
   </url>
   
   <url>
-    <loc>https://jialanxin.github.io/njuphy-/categories/%E7%95%99%E5%AD%A6/</loc>
+    <loc>https://jialanxin.github.io/njuphy-/categories/%E7%94%B3%E8%AF%B7/</loc>
     <lastmod>2019-02-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -137,7 +153,7 @@
   </url>
   
   <url>
-    <loc>https://jialanxin.github.io/njuphy-/categories/%E7%95%99%E5%AD%A6%E8%AF%BE%E7%A8%8B/</loc>
+    <loc>https://jialanxin.github.io/njuphy-/categories/%E7%95%99%E5%AD%A6/</loc>
     <lastmod>2019-02-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -149,13 +165,31 @@
   </url>
   
   <url>
-    <loc>https://jialanxin.github.io/njuphy-/categories/%E7%AD%BE%E8%AF%81/</loc>
+    <loc>https://jialanxin.github.io/njuphy-/categories/%E7%95%99%E5%AD%A6%E8%AF%BE%E7%A8%8B/</loc>
     <lastmod>2019-02-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jialanxin.github.io/njuphy-/tags/%E7%AD%BE%E8%AF%81/</loc>
+    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jialanxin.github.io/njuphy-/categories/%E7%AD%BE%E8%AF%81/</loc>
+    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jialanxin.github.io/njuphy-/tags/%E8%AF%BE%E7%A8%8B/</loc>
+    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jialanxin.github.io/njuphy-/categories/%E8%AF%BE%E7%A8%8B/</loc>
     <lastmod>2019-02-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
