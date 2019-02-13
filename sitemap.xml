@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://jialanxin.github.io/njuphy-/post/%E6%9C%80%E6%96%B0%E7%95%99%E5%AD%A6%E8%AF%BE%E7%A8%8B/</loc>
+    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jialanxin.github.io/njuphy-/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jialanxin.github.io/njuphy-/</loc>
+    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jialanxin.github.io/njuphy-/post/</loc>
+    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jialanxin.github.io/njuphy-/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jialanxin.github.io/njuphy-/archives/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jialanxin.github.io/njuphy-/tags/%E7%95%99%E5%AD%A6%E8%AF%BE%E7%A8%8B/</loc>
+    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jialanxin.github.io/njuphy-/categories/%E7%95%99%E5%AD%A6%E8%AF%BE%E7%A8%8B/</loc>
+    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
