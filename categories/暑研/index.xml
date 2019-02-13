@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on NJUPHY留学分享</title>
-    <link>https://jialanxin.github.io/njuphy-/post/</link>
-    <description>Recent content in Posts on NJUPHY留学分享</description>
+    <title>暑研 on NJUPHY留学分享</title>
+    <link>https://jialanxin.github.io/njuphy-/categories/%E6%9A%91%E7%A0%94/</link>
+    <description>Recent content in 暑研 on NJUPHY留学分享</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 13 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://jialanxin.github.io/njuphy-/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jialanxin.github.io/njuphy-/categories/%E6%9A%91%E7%A0%94/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://jialanxin.github.io/njuphy-/post/3%E6%9C%88%E6%9A%91%E7%A0%94%E7%94%B3%E8%AF%B7%E5%9F%B9%E8%AE%AD%E8%AF%BE/</guid>
       <description>Youtube资源请科学上网观看，如有问题请咨询群内张泽恒同学 整体策略和时间规划YTB|PPT CV写作YTB|PPT 暑研注意事项YTB|PP</description>
-    </item>
-    
-    <item>
-      <title>最新留学课程</title>
-      <link>https://jialanxin.github.io/njuphy-/post/%E6%9C%80%E6%96%B0%E7%95%99%E5%AD%A6%E8%AF%BE%E7%A8%8B/</link>
-      <pubDate>Wed, 13 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://jialanxin.github.io/njuphy-/post/%E6%9C%80%E6%96%B0%E7%95%99%E5%AD%A6%E8%AF%BE%E7%A8%8B/</guid>
-      <description>Youtube资源请科学上网观看，如有问题请咨询群内张泽恒同学 【行前准备】1、Academic 【行前准备】2、Industry 【行前准备】3</description>
     </item>
     
   </channel>

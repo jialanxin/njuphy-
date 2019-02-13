@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jialanxin.github.io/njuphy-/post/3%E6%9C%88%E6%9A%91%E7%A0%94%E7%94%B3%E8%AF%B7%E5%9F%B9%E8%AE%AD%E8%AF%BE/</loc>
+    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jialanxin.github.io/njuphy-/post/%E6%9C%80%E6%96%B0%E7%95%99%E5%AD%A6%E8%AF%BE%E7%A8%8B/</loc>
     <lastmod>2019-02-13T00:00:00+00:00</lastmod>
   </url>
@@ -31,6 +36,18 @@
   
   <url>
     <loc>https://jialanxin.github.io/njuphy-/archives/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jialanxin.github.io/njuphy-/tags/%E6%9A%91%E7%A0%94/</loc>
+    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jialanxin.github.io/njuphy-/categories/%E6%9A%91%E7%A0%94/</loc>
+    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
