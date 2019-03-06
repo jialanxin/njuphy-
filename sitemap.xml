@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jialanxin.github.io/njuphy-/guidance/</loc>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jialanxin.github.io/njuphy-/post/%E7%AC%AC%E5%8D%81%E6%9C%9F%E5%BE%AE%E8%AE%B2%E5%BA%A7/</loc>
     <lastmod>2019-03-06T00:00:00+00:00</lastmod>
   </url>
@@ -319,10 +324,6 @@
     <loc>https://jialanxin.github.io/njuphy-/categories/%E6%96%87%E4%BB%B6%E6%A8%A1%E6%9D%BF/</loc>
     <lastmod>2019-03-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jialanxin.github.io/njuphy-/guidance/</loc>
   </url>
   
   <url>
