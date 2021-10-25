@@ -1,0 +1,25 @@
+baseURL = "https://jialanxin.github.io/njuphy-/"
+languageCode = "zh-CN"
+hasCJKLanguage = true
+title = "NJUPHY留学分享"
+theme = "maupassant"
+
+[author]
+  name = "NJUPHY高年级学生"
+
+[params]
+  author = "NJUPHY留学分享"
+  subtitle = "方便找寻资源，可以将主页加进网页收藏夹。"
+  busuanzi = true
+
+[[menu.main]]
+    identifier="guidance"
+    name = "如何使用本站"
+    url="/guidance/"
+    weight = 2
+
+[[menu.main]]
+    identifier = "archives"
+    name = "存档"
+    url = "/archives/"
+    weight = 3

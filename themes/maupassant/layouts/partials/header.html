@@ -1,0 +1,28 @@
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                {{ if .IsHome }}
+                    <h1>
+                        <a id="logo" href="{{ .Site.BaseURL | absURL }}">
+                            {{ .Site.Title }}
+                        </a>
+                    </h1>
+                {{ else }}
+                    <a id="logo" href="{{ .Site.BaseURL | absURL }}">
+                        {{ .Site.Title }}
+                    </a>
+                {{ end }}
+                {{ with .Site.Params.subtitle }}<p class="description">{{ . }}</p>{{ end }}
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="{{ if or (.IsHome) (eq .Type "post") }}current{{ end }}" href="{{ .Site.BaseURL | absURL }}">首页</a>
+                    {{ range .Site.Menus.main }}
+                    <a {{ if eq .URL $.RelPermalink }}class="current"{{ end }} href="{{ .URL | absURL }}" title="{{ .Name }}">{{ .Name }}</a>
+                    {{ end }}
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,56 @@
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ if .Site.Params.busuanzi }}
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    {{ end }}
+
+    {{ if .IsHome -}}
+    <title>{{ .Site.Title }} | {{ .Site.Params.subtitle}}</title>
+    <meta property="og:title" content="{{ .Site.Title }} | {{ .Site.Params.subtitle}}">
+    <meta property="og:type" content="website">
+    <meta name="Keywords" content="{{.Site.Params.keywords}}">
+    <meta name="description" content="{{ .Site.Params.description }}">
+    {{- else -}}
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
+    <meta property="og:type" content="article">
+        {{ with .Params.date }}
+    <meta property="article:published_time" content='{{ .Format "2006-01-02T15:04:05+08:00" }}'>
+        {{ end }}
+        {{ with .Params.lastmod }}
+    <meta property="article:modified_time" content='{{ .Format "2006-01-02T15:04:05+08:00" }}'>
+        {{ end }}
+    <meta name="Keywords" content="{{ if .Keywords }}{{ .Keywords }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }}">
+        {{ if .Params.author -}}
+    <meta name="author" content="{{ .Params.author }}">
+        {{ else }}
+    <meta name="author" content="{{ .Site.Author.name }}">
+        {{- end }}
+    {{- end }}
+    <meta property="og:url" content="{{ .Permalink }}">
+    <link rel="shortcut icon" href='{{ "favicon.ico" | relURL }}'  type="image/x-icon">
+
+    <link rel="stylesheet" href='{{ "css/normalize.css" | relURL}}'>
+    <link rel="stylesheet" href='{{ "css/style.css" | relURL }}'>
+    {{ range .AlternativeOutputFormats -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    {{ if .Site.Params.googleAd }}
+    <script data-ad-client="{{ .Site.Params.googleAd }}" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    {{ end }}
+    
+    {{if .Site.Params.fancybox }}
+        <link href="https://cdn.bootcdn.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
+    {{ end }}
+    
+    <!-- custom css -->
+    {{ range .Site.Params.customCSS }}
+        <link rel="stylesheet" href='{{ "/css/" | relURL }}{{ . }}'>
+    {{ end }}
+</head>

@@ -1,0 +1,30 @@
+{{ define "content"}}
+<div class="res-cons">
+    {{- $paginator := .Paginate (where .Site.RegularPages "Type" "in" (slice "post" "posts")) }}
+    {{ range $index,$data := $paginator.Pages }}
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            {{ .Date.Year }}年{{ printf "%d" .Date.Month }}月{{ .Date.Day }}日
+        </date>
+        {{ with .Params.Categories }}
+        <div class="post-meta">
+            <span>|</span>
+            {{ range . }}
+            <span class="meta-category"><a href='{{ "categories/" | relURL }}{{ . | urlize }}'>{{ . }}</a></span>
+            {{ end }}
+        </div>
+        {{ end }}
+        <div class="post-content">
+            {{ .Summary }}……
+        </div>
+        <p class="readmore"><a href="{{ .Permalink }}">阅读全文</a></p>
+    </article>
+    {{ end }}
+    {{ partial "paginator" . }}
+</div>
+{{ end }}

@@ -1,0 +1,54 @@
+{{ define "content"}}
+<div class="res-cons">
+    {{ partial "toc" . }}
+    <article class="post">
+        <header>
+            <h1 class="post-title">{{ .Title }}</h1>
+        </header>
+        <date class="post-meta meta-date">
+            {{ .Date.Year }}年{{ printf "%d" .Date.Month }}月{{ .Date.Day }}日
+        </date>
+        {{ with .Params.Categories }}
+        <div class="post-meta">
+            <span>|</span>
+            {{ range . }}
+            <span class="meta-category"><a href='{{ "categories/" | relURL }}{{ . | urlize }}'>{{ . }}</a></span>
+            {{ end }}
+        </div>
+        {{ end }}
+        {{ if .Site.Params.busuanzi }}
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        {{ end }}
+        {{ if .Params.toc }}
+        <div class="clear" style="display: none">
+            <div class="toc-article">
+                <div class="toc-title">文章目录</div>
+            </div>
+        </div>
+        {{ end }}
+        <div class="post-content">
+            {{ .Content }}
+        </div>
+
+        {{ partial "copyright" .}}
+
+        {{ partial "related" . }}
+
+        <div class="post-meta meta-tags">
+            {{ if and (isset .Params "tags") .Params.tags }}
+            <ul class="clearfix">
+                {{ range .Params.Tags }}
+                <li><a href='{{ "tags/" | relURL }}{{ . | urlize }}'>{{ . }}</a></li>
+                {{ end }}
+            </ul>
+            {{ else }}
+            没有标签
+            {{ end }}
+        </div>
+    </article>
+    {{ partial "comments" . }}
+</div>
+{{ end }}
