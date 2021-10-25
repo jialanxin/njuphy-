@@ -77,6 +77,12 @@ body {
     /**-webkit-font-smoothing: antialiased;**/
     -moz-osx-font-smoothing: grayscale;
 }
+img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;	
+}
 a, button.submit {
     color:#6E7173;
     text-decoration:none;
@@ -93,12 +99,10 @@ mark {
     background: #fffdd1;
 }
 pre, code {
-    background:#f8f8f8;
     font-family:Menlo, Monaco, Consolas, "Lucida Console", "Courier New", monospace;
     font-size:.92857em;
 }
 pre {
-    margin: 2em 0;
     overflow:auto;
     border: 1px solid #ddd;
     display: block;
@@ -108,12 +112,28 @@ code {
 }
 blockquote {
     display: block;
-    margin: 1.1em 0;
-    padding: 1.5em 2em .5em 2em;
-    border: 1px dashed #ddd;
-    border-left: 0.5em solid #ddd;
-    line-height: 1.5;
-    box-shadow: 3px 3px 0 #eaeaea;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 2.5em 0;
+    padding: 0 0 0 50px;
+    color: #555;
+    border-left: none;
+}
+blockquote::before{
+    content: "\201C";
+    display: block;
+    font-family: times;
+    font-style: normal;
+    font-size: 48px;
+    color: #444;
+    font-weight: bold;
+    line-height: 30px;
+    margin-left: -50px;
+    position: absolute; 
 }
   
 /**
@@ -278,30 +298,8 @@ textarea {
 }
 .meta-category a {
     position: relative;
-    margin-left: 1.8em;
 }
-.meta-category a:before, .meta-category a:after {
-    content: '';
-    margin-left: -1.5em;
-    position: absolute;
-}
-.meta-category a:before {
-    width: 18px;
-    height: 12px;
-    background: #0089e0;
-    border-radius: 0 0 1px 1px;
-    margin-top: 4px;
-}
-.meta-category a:after {
-    width: 6px;
-    height: 0;
-    left: 3px;
-    border-style: solid;
-    border-color: transparent transparent #0089e0 transparent;
-    border-width: 0 1px 2px 1px;
-    background: transparent;
-    margin-top: 2px;
-}
+
 .meta-tags {
     display: inline-block;
 }
@@ -371,18 +369,22 @@ textarea {
 }
 .post-content h3,.post-content h2{
     margin: 1.4em 0 1.1em;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
 }
-/* .post-content pre, .comment-content pre {
-    max-height: 320px;
-} */
-.post-content pre, .comment-content pre {
-    padding: 1em 1.5em;
+.post-content pre{
+    padding: 1em;
 }
-.post-content p code, .comment-content p code {
+.post-content code{
     display:inline;
-    margin:0 5px;
-    padding:3px 5px;
-    border: 1px solid #ddd;
+}
+.post-content p code{
+    display:inline;
+    padding: .2em .4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(27,31,35,.10);
+    border-radius: 3px;
 }
 .post-content p {
     margin:0 0 1.1em;
@@ -420,6 +422,7 @@ textarea {
     list-style:none;
     padding:25px 0 0;
     font-size:16px;
+    text-align: center;
 }
 .page-navigator li {
     display:inline-block;
@@ -605,8 +608,8 @@ textarea.textarea {
 }
 #footer {
     padding:.8em 0 3.6em;
-    line-height:1.5;
     color:#999;
+    text-align: center;
 }
 .error-page {
     margin-top:100px;
@@ -989,3 +992,127 @@ img.alignright {
     background: #F8F8F8;
     border-bottom-color: #D26911; 
 }
+/* 版权声明 */
+.post-copyright {
+    margin: 2em 0 0;
+    padding: 0.5em 1em;
+    border-left: 3px solid #ff1700;
+    background-color: #f9f9f9;
+    list-style: none;
+}
+.post-copyright a {
+    border-bottom: 1px solid #999;
+}
+
+/* table*/
+table {
+    margin: auto auto 15px;
+    width: 100%;
+    background: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+}
+
+table {
+    margin: auto auto 15px;
+    width: 100%;
+    background: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left; 
+}
+tbody {
+    border: 0;
+}
+table tr th {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-bottom: 2px solid #909ba2; 
+    background-color: #F0F0F0;
+}
+table td {
+    padding: 5px 10px; 
+}
+table tr:nth-child(2n) {
+    background: #f7f8f8; 
+}
+
+table tr {
+    border: 0;
+    border-top: 1px solid #CCC;
+    background-color: white;
+}
+  
+table tr th, table tr td {
+    font-size: 1em;
+    border: 1px solid #CCC;
+    padding: 0.5em 1em;
+    text-align: left;
+}
+
+.github-badge {
+    display: inline-block;
+    border-radius: 4px;
+    text-shadow: none;
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.25;
+    background-color: #ABBAC3;
+    margin-bottom: 5px; 
+}
+.github-badge a {
+  color: #fff; 
+}
+.github-badge img {
+  /*height: "calc(%s * 1.25)" % $fontsize-footnote*/
+  height: 1.25em;
+  vertical-align: top; 
+}
+.github-badge .badge-subject {
+  display: inline-block;
+  background-color: #555;
+  padding: 4px 4px 4px 6px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; 
+}
+.github-badge .badge-value {
+  display: inline-block;
+  padding: 4px 6px 4px 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px; 
+}
+.github-badge .bg-brightgreen {
+  background-color: #4c1 !important; 
+}
+.github-badge .bg-green {
+  background-color: #97ca00 !important; 
+}
+.github-badge .bg-yellowgreen {
+  background-color: #a4a61d !important; 
+}
+.github-badge .bg-orange {
+  background-color: #FE7D37 !important; 
+}
+.github-badge .bg-yellow {
+  background-color: #dfb317 !important; 
+}
+.github-badge .bg-blueviolet {
+  background-color: #8A2BE2 !important; 
+}
+.github-badge .bg-pink {
+  background-color: #FFC0CB !important; 
+}
+.github-badge .bg-red {
+  background-color: #e05d44 !important; 
+}
+.github-badge .bg-blue {
+  background-color: #007EC6 !important; 
+}
+.github-badge .bg-grey,.github-badge .bg-gray {
+  background-color: #555 !important; 
+}
+.github-badge .bg-lightgrey,.github-badge .bg-lightgray {
+  background-color: #9f9f9f !important; 
+}
+  

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on NJUPHY留学分享</title>
@@ -6,10 +6,33 @@
     <description>Recent content in Tags on NJUPHY留学分享</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 06 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jialanxin.github.io/njuphy-/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GRE</title>
+      <link>https://jialanxin.github.io/njuphy-/tags/gre/</link>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jialanxin.github.io/njuphy-/tags/gre/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://jialanxin.github.io/njuphy-/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>托福</title>
+      <link>https://jialanxin.github.io/njuphy-/tags/%E6%89%98%E7%A6%8F/</link>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jialanxin.github.io/njuphy-/tags/%E6%89%98%E7%A6%8F/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>留学课程</title>
+      <link>https://jialanxin.github.io/njuphy-/tags/%E7%95%99%E5%AD%A6%E8%AF%BE%E7%A8%8B/</link>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jialanxin.github.io/njuphy-/tags/%E7%95%99%E5%AD%A6%E8%AF%BE%E7%A8%8B/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>暑研</title>
@@ -93,24 +116,6 @@
     </item>
     
     <item>
-      <title>GRE</title>
-      <link>https://jialanxin.github.io/njuphy-/tags/gre/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://jialanxin.github.io/njuphy-/tags/gre/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>托福</title>
-      <link>https://jialanxin.github.io/njuphy-/tags/%E6%89%98%E7%A6%8F/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://jialanxin.github.io/njuphy-/tags/%E6%89%98%E7%A6%8F/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>套磁</title>
       <link>https://jialanxin.github.io/njuphy-/tags/%E5%A5%97%E7%A3%81/</link>
       <pubDate>Sun, 03 Mar 2019 00:00:00 +0000</pubDate>
@@ -179,15 +184,6 @@
       <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://jialanxin.github.io/njuphy-/tags/%E9%A3%9E%E8%B7%83%E6%89%8B%E5%86%8C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>留学课程</title>
-      <link>https://jialanxin.github.io/njuphy-/tags/%E7%95%99%E5%AD%A6%E8%AF%BE%E7%A8%8B/</link>
-      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://jialanxin.github.io/njuphy-/tags/%E7%95%99%E5%AD%A6%E8%AF%BE%E7%A8%8B/</guid>
       <description></description>
     </item>
     

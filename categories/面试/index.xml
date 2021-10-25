@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>面试 on NJUPHY留学分享</title>
@@ -6,11 +6,7 @@
     <description>Recent content in 面试 on NJUPHY留学分享</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 19 Feb 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://jialanxin.github.io/njuphy-/categories/%E9%9D%A2%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 19 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://jialanxin.github.io/njuphy-/categories/%E9%9D%A2%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>面试全过程记录（宋谦）</title>
       <link>https://jialanxin.github.io/njuphy-/post/%E9%9D%A2%E8%AF%95%E5%85%A8%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95%E5%AE%8B%E8%B0%A6/</link>
